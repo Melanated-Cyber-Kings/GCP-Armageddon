@@ -1,7 +1,7 @@
 provider "google" {
   project = "armageddon-gcp"
   region  = "us-central1"
-  credentials = "armageddon-gcp-198aec043f5c.json"
+  #credentials = "armageddon-gcp-198aec043f5c.json"
 }
 
 #Jody Engineer first authentication was here attempting to 
