@@ -3,7 +3,7 @@ terraform {
   backend "gcs" {
     bucket = "armageddon-bucket-123"
     prefix = "terraform/state"
-   # credentials = "armageddon-gcp-198aec043f5c.json"
+    # credentials = "armageddon-gcp-198aec043f5c.json"
   }
   required_providers {
     google = {
