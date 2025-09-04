@@ -118,7 +118,7 @@ To create your own branch locally use the command **git checkout -b <"Your branc
 
 <br>
 
-First Let's create our repo. You can add a Readme file optionally.
+First create your repo. You can add a Readme file optionally.
 
 <br>
 
