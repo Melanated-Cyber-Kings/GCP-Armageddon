@@ -69,6 +69,10 @@ This project shows how to connect your GCP Project to Github actions and run ter
 <img src="Images/branchprotect1.png" alt="image1" width="800"/>
 <img src="Images/branchprotect2.png" alt="image1" width="800"/>
 
+<h3>Step 2:</h3>  Get your secret in the repository to have your json key
+<img src="Images/secret-var3.png" alt="secret-var3" width="800"/>
+
+
 ****📂 Terraform Infrastructure Setup****
 
 First Let's create our repo.
