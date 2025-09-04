@@ -1,4 +1,4 @@
-<h1>GCP ARMAGEDDON</h1>
+<h1 align="center">GCP ARMAGEDDON</h1>
 
 
 
@@ -24,23 +24,24 @@ Automated Terraform deployment with simple SNYK security scan
 <details>
   <summary>Table Of Contents</summary>
 
-  - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/edit/main/README.md#about-the-project">About The Project</a>
-  - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/edit/main/README.md#-tools--technologies-used">Tools & Technologies Used</a>
-  - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/edit/main/README.md#instructions-before-starting-project">Instructions before starting Project</a>
-      - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/edit/main/README.md#step-1">Step 1: Branch protection rules to allow only pull requests to the main branch</a>  
-      - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/edit/main/README.md#step-1">Step 2: Get your secret in the repository to have your json key</a>
-      - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/edit/main/README.md#step-1">Step 3: Each member create a new branch that's not the main branch save changes into that new branch and push into github</a>
+  - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/tree/main?tab=readme-ov-file#-about-the-project">About The Project</a>
+  - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/tree/main?tab=readme-ov-file#-tools--technologies-used">Tools & Technologies Used</a>
+  - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/tree/main?tab=readme-ov-file#instructions-before-starting-project">Instructions before starting Project</a>
+      - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/tree/main?tab=readme-ov-file#step-1">Step 1: Branch protection rules to allow only pull requests to the main branch</a>  
+      - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/tree/main?tab=readme-ov-file#step-2">Step 2: Get your secret in the repository to have your json key</a>
+      - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/tree/main?tab=readme-ov-file#step-3">Step 3: Each member create a new branch that's not the main branch save changes into that new branch and push into github</a>
 
 </details>
 
 
-<h2>📌 About The Project</h2>
+<h2 align="center">📌 About The Project</h2>
+
 
 This project shows how to connect your GCP Project to Github actions and run terraform to run a simple SNYK security scan. Although the objective is to run a simple SNYK scan, GCP infrastructure can still be spun up automatically instead of using the GCP console or gcloud CLI. 
 
 ---
 
-<h2>🛠 Tools & Technologies Used</h2>
+<h2 align="center">🛠 Tools & Technologies Used</h2>
 
 - Terraform  (_Infrastructure as Code to provision GCP networking resources_)  
 - GCP  (_VPC, Subnets, NAT Gateway, Router, and Storage Bucket_)  
@@ -50,7 +51,7 @@ This project shows how to connect your GCP Project to Github actions and run ter
 
 ---
 
-<h2>🧾Instructions before starting Project</h2>
+<h2 align="center">🧾Instructions before starting Project</h2>
 
 <h3>Step 1:</h3> Branch protection rules to allow only pull requests to the main branch
 
@@ -88,5 +89,3 @@ Now we need to copy the url of our repo in the "Code" drop down. Then we can go 
 
 This is Rod adding a line 
 This is Rod adding a line again
-
-Test run, F2099
