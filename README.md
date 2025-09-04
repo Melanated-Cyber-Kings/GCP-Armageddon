@@ -66,6 +66,8 @@ This project shows how to connect your GCP Project to Github actions and run ter
     - Include administrators (optional)
     - Click Create at the bottom
 
+<img src="Images/branchprotect1.png" alt="image1" width="800"/>
+<img src="Images/branchprotect2.png" alt="image1" width="800"/>
 
 ****📂 Terraform Infrastructure Setup****
 
