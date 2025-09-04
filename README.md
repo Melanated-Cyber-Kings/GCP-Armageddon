@@ -21,6 +21,7 @@ Cleveland
 
 <h4 align="center">GitActions CI/CD Pipeline for GCP Infrastructure. Automated Terraform deployment with simple SNYK security scan</h4>
 
+
 ---
 
 <details>
@@ -55,7 +56,7 @@ This project shows how to connect your GCP Project to Github actions and run ter
 
 <h2 align="center">🧾Instructions before starting Project</h2>
 
-<h3>Step 1:</h3> Branch protection rules to allow only pull requests to the main branch
+<h3>Step 1:  Branch protection rules to allow only pull requests to the main branch</h3>
 
 
 - Go to your repo on Github
@@ -68,28 +69,98 @@ This project shows how to connect your GCP Project to Github actions and run ter
     - Require status checks to pass (optional, if you have CI/CD)
     - Include administrators (optional)
     - Click Create at the bottom
+   
+---
+   
+<div align="center">
+  <img src="Images/branchprotect1.png" alt="image1" width="800"/>
+</div>
 
-<img src="Images/branchprotect1.png" alt="image1" width="800"/>
-<img src="Images/branchprotect2.png" alt="image1" width="800"/>
 
-<h3>Step 2:</h3>  Get your secret in the repository to have your json key
-<img src="Images/secret-var3.png" alt="secret-var3" width="800"/>
+<div align="center">
+  <img src="Images/branchprotect2.png" alt="image1" width="800"/>
+</div>
 
-<h3>Step 3:</h3> Each member create a new branch that's not the main branch save changes into that new branch and push into github
-<img src="Images/branchf2099fork5.png" alt="secret-var3" width="800"/>
+---
 
+
+<h3>Step 2: Get your secret in the repository to have your json key</h3>  
+
+<br>
+
+Open GitHub, go to your Repo's settings, and add a secret called "GOOGLE_CREDENTIALS". Your repo will use this to connect to GCP and run the terraform scripts. You need storage access, terraform needs to save it's states in a bucket. This prevents it from running into issues by attempting to create objests that already exist.
+
+<br>
+
+<div align="center">
+  <img src="Images/secret-var3.png" alt="secret-var3" width="800"/>
+</div>
+
+<br>
+
+<h3>Step 3: Each member create a new branch that's not the main branch save changes into that new branch and push into github</h3> 
+
+<br>
+
+To create your own branch locally use the command **git checkout -b <"Your branch name">**. This will go from the main branch to your new branch. You can verify this by using the commandd **git branch**. All project team memebers must create their own branch save changes to it and push into github.
+
+<br>
+
+<div align="center">
+  <img src="Images/branchf2099fork5.png" alt="secret-var3" width="800"/>
+</div>
+
+<br>
+
+<br>
 
 <h2 align="center">📂Terraform Infrastructure Setup</h2>
 
+<br>
 
-First Let's create our repo.
+First Let's create our repo. You can add a Readme file optionally.
+
+<br>
+
 <img width="1920" height="1240" alt="screencapture-github-new-2025-08-29-18_02_48" src="https://github.com/user-attachments/assets/b2da517f-eec5-41b4-9dac-e6fe7d9c111a" />
 
+<br>
+<br>
 
-Now we need to copy the url of our repo in the "Code" drop down. Then we can go into VScode and remote into the repo from our local device. The command we need to run in our VSCode terminal is "git remote add origin <your_repos_url>"
+In this instance because we cloned a GitHub repo that we created (i.e., the repo is already on GitHub), then Git is already set up with the remote (origin) — so you don't need to run git remote add.
+However, if you create your project locally and started with the command **git init** not cloned this means its not connected to a github repo so you would have to copy the url of your repo in the "Code" drop down. Then you can go into VScode and remote into the repo from your local device. The command you'll need to run in our VSCode terminal is **git remote add origin <your_repos_url>"**. Essentially what this command is saying is "Connect your local project to a GitHub repository (or another remote repo) so you can push code there.
+
+
+<br>
+
 <img width="1920" height="1047" alt="screencapture-github-lynellg-Armageddon-2025-08-29-18_50_21" src="https://github.com/user-attachments/assets/435c3bae-2a67-4fa9-a011-52cbcd6f7390" />
 
 
-This is Rod adding a line 
-This is Rod adding a line again
-Brimah
+<br>
+
+<br>
+
+---
+
+Each Project team member after creating their respected branches can follow a typical workflow. You can either clone the repo as mentioned previously or create files for the project locally and push to your created branch. This typical workflow involves the following commands
+
+<br>
+
+Make changes or add files
+**git add .** 
+
+<br>
+
+Commit the changes
+**git commit -m "your comment here"**
+
+<br>
+
+Push to Github
+**git push origin <"your branch name here>**
+
+
+<br>
+
+
+
