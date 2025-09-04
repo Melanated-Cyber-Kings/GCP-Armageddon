@@ -1,25 +1,27 @@
 <h1 align="center">GCP ARMAGEDDON</h1>
 
 
+**Project Leader:** 
+<a href="https://github.com/Charles-Roro">Charles CEO</a>
 
 
-Cloud Engineers:
+**Cloud Engineers:**
 <a href="https://github.com/lynellg">Jody</a> , <a href="https://github.com/Futurist2099">Futurist</a> and <a href="https://github.com/Dejii2">DJ</a>
 
-DevSecOps:
+**DevSecOps:**
 <a href="https://github.com/LarvariousM">Lavarious</a> and <a href="https://github.com/cloudninja365">Rod</a>
 
-Dev Tooling:
+**Dev Tooling:**
 <a href="https://github.com/KTMachine">Invictus</a>  and <a href="https://github.com/Brimah-Khalil-Kamara">Brimah</a>
 
 
-Floaters:
+**Floaters:**
 Cleveland
 
 
-GitActions CI/CD Pipeline for GCP Infrastructure  
-Automated Terraform deployment with simple SNYK security scan
-****
+<h4 align="center">GitActions CI/CD Pipeline for GCP Infrastructure. Automated Terraform deployment with simple SNYK security scan</h4>
+
+---
 
 <details>
   <summary>Table Of Contents</summary>
@@ -77,7 +79,8 @@ This project shows how to connect your GCP Project to Github actions and run ter
 <img src="Images/branchf2099fork5.png" alt="secret-var3" width="800"/>
 
 
-****📂 Terraform Infrastructure Setup****
+<h2 align="center">📂Terraform Infrastructure Setup</h2>
+
 
 First Let's create our repo.
 <img width="1920" height="1240" alt="screencapture-github-new-2025-08-29-18_02_48" src="https://github.com/user-attachments/assets/b2da517f-eec5-41b4-9dac-e6fe7d9c111a" />
