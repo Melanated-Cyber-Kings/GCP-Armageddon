@@ -72,6 +72,9 @@ This project shows how to connect your GCP Project to Github actions and run ter
 <h3>Step 2:</h3>  Get your secret in the repository to have your json key
 <img src="Images/secret-var3.png" alt="secret-var3" width="800"/>
 
+<h3>Step 3:</h3> Each member create a new branch that's not the main branch save changes into that new branch and push into github
+<img src="Images/branchf2099fork5.png" alt="secret-var3" width="800"/>
+
 
 ****📂 Terraform Infrastructure Setup****
 
