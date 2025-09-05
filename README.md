@@ -42,9 +42,16 @@ Cleveland
       - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/tree/main?tab=readme-ov-file#step-2">5 Connect local project with Git Repository:</a>
       - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/tree/main?tab=readme-ov-file#step-2">6 Create .gitignore:</a>
       - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/tree/main?tab=readme-ov-file#step-2">7 Check the remaining files in:</a>
-      - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/tree/main?tab=readme-ov-file#step-2">8 Create Authentication File:</a>
-      - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/tree/main?tab=readme-ov-file#step-2">9 Setup Remote Backend:</a>
-      - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/tree/main?tab=readme-ov-file#step-2">10 Create VPC:</a>
+      - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/tree/main?tab=readme-ov-file#step-2">8 Create Authentication File: (**Cloud Engineers:**
+<a href="https://github.com/lynellg">**Jody**</a> , <a href="https://github.com/Futurist2099">**Futurist**</a> and <a href="https://github.com/Dejii2">**DJ**)</a></a>
+      - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/tree/main?tab=readme-ov-file#step-2">9 Setup Remote Backend: (**Cloud Engineers:**
+<a href="https://github.com/lynellg">**Jody**</a> , <a href="https://github.com/Futurist2099">**Futurist**</a> and <a href="https://github.com/Dejii2">**DJ**)</a></a>
+      - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/tree/main?tab=readme-ov-file#step-2">10 Create VPC: (**Cloud Engineers:**
+<a href="https://github.com/lynellg">**Jody**</a> , <a href="https://github.com/Futurist2099">**Futurist**</a> and <a href="https://github.com/Dejii2">**DJ**)</a></a>
+      - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/tree/main?tab=readme-ov-file#step-2">11 Terraform Workflow: (**Dev Tooling:**
+<a href="https://github.com/KTMachine">**Invictus**</a> and <a href="https://github.com/Brimah-Khalil-Kamara">**Brimah**)</a></a>
+      - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/tree/main?tab=readme-ov-file#step-2">12 SNYK Configuration: (**DevSecOps:**
+<a href="https://github.com/LarvariousM">**Lavarious**</a> and <a href="https://github.com/cloudninja365">**Rod**)</a></a>
 
 
       
@@ -334,4 +341,12 @@ resource "google_compute_network" "vpc_network" {
 }
 ```
 <h2></h2>
+
+<h2>11 Terraform Workflow:</h2>
+
+Once our basic infrastructure has been configured, we can begin to execute terraform commands in our terminal
+
+
+<h2>12 SNYK Configuration:</h2>
+
 
