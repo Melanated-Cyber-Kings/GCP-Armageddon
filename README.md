@@ -83,6 +83,7 @@ This project shows how to connect your GCP Project to Github actions and run ter
 - GitHub  (_Source control for Terraform scripts, including workflows_) 
 - terraform.yaml workflows script
 - snyk.yaml workflows script
+- Visual Studio Code
 
 <br>
 
