@@ -1,4 +1,4 @@
-<h1 align="center">GCP ARMAGEDDON</h1>
+<h1 align="center">GCP ARMAGEDDON PROJECT</h1>
 
 
 **Project Leader:** 
@@ -287,7 +287,8 @@ The changes have been pushed to the remote repository and we can check this in t
 <h2></h2>
 
 
-<h2>8 Create Authentication File:</h2>
+<h2>8 Create Authentication File: (Cloud Engineers:
+<a href="https://github.com/lynellg">Jody</a> , <a href="https://github.com/Futurist2099">Futurist</a> and <a href="https://github.com/Dejii2">DJ</a>)</h2>
 
 In order for terraform to authenticate to Google Cloud an authentication file is needed, making use of the key created and downloaded locally above.
 
@@ -308,7 +309,8 @@ provider "google" {
 
 <h2></h2>
 
-<h2>9 Setup Remote Backend:</h2>
+<h2>9 Setup Remote Backend: (Cloud Engineers:
+<a href="https://github.com/lynellg">Jody</a> , <a href="https://github.com/Futurist2099">Futurist</a> and <a href="https://github.com/Dejii2">DJ</a>)</h2>
 
 In VS code a file named [1-backend.tf](https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/blob/main/01-backend.tf) is created.
 
@@ -328,7 +330,8 @@ In addition added is the credentials.
 
 <h2></h2>
 
-<h2>10 Create VPC:</h2>
+<h2>10 Create VPC: (Cloud Engineers:
+<a href="https://github.com/lynellg">Jody</a> , <a href="https://github.com/Futurist2099">Futurist</a> and <a href="https://github.com/Dejii2">DJ</a>)</h2>
 
 The VPC will allow you to define your network infrastucture.
 
@@ -342,11 +345,18 @@ resource "google_compute_network" "vpc_network" {
 ```
 <h2></h2>
 
-<h2>11 Terraform Workflow:</h2>
+<h2>11 Terraform Workflow: (Dev Tooling:
+<a href="https://github.com/KTMachine">Invictus</a> and <a href="https://github.com/Brimah-Khalil-Kamara">Brimah</a>)</h2>
 
 Once our basic infrastructure has been configured, we can begin to execute terraform commands in our terminal
 
+<h2>
 
-<h2>12 SNYK Configuration:</h2>
+
+ 
+</h2>
+
+<h2>12 SNYK Configuration: (DevSecOps:
+<a href="https://github.com/LarvariousM">Lavarious</a> and <a href="https://github.com/cloudninja365">Rod</a>)</h2>
 
 
