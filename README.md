@@ -79,3 +79,11 @@ Now we need to copy the url of our repo in the "Code" drop down. Then we can go 
 
 This is Rod adding a line 
 This is Rod adding a line again
+
+
+# Invictus Notes
+
+1. Git Commands to Initiate, Status, Add, Commit, then Push to my branch (Invictus111). All are typical use for get local working branch to Github.
+2. Created a Pull Request to get approval to me be merged to Main branch.
+3. Discovered errors in the Terraform init workflow file where the value for the credentials were invalids. The credentials were in the backend.tf and authentication.tf.
+4. The credentials were removed. The Pull Request was then approved.
