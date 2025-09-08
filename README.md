@@ -81,9 +81,16 @@ This is Rod adding a line
 This is Rod adding a line again
 
 
-# Invictus Notes
+# Invictus (KTMachine) Notes
 
 1. Git Commands to Initiate, Status, Add, Commit, then Push to my branch (Invictus111). All are typical use for get local working branch to Github.
+![alt text](Photos/Pic%204.png)
+
 2. Created a Pull Request to get approval to me be merged to Main branch.
+![alt text](Photos/Pic%205.png)
+
 3. Discovered errors in the Terraform init workflow file where the value for the credentials were invalids. The credentials were in the backend.tf and authentication.tf.
+![alt text](Photos/Pic%206.png)
+
 4. The credentials were removed. The Pull Request was then approved.
+![alt text](Photos/Pic%207.png)
