@@ -390,7 +390,89 @@ prefix = "terraform/state"
 
 <h2></h2>
 
-In addition added is the credentials.
+<h2>10 Create Router: (Cloud Engineers:
+<a href="https://github.com/lynellg">Jody</a> , <a href="https://github.com/Futurist2099">Futurist</a> and <a href="https://github.com/Dejii2">DJ</a>)</h2>
+
+In VS code a file named [4-router.tf](https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/blob/main/4-router.tf) is created. 
+
+<br>
+
+```hcl
+resource "google_compute_router" "router" {
+  name    = "router"
+  region  = "us-central1"
+  network = google_compute_network.main.id
+
+  bgp {
+    asn = 65001
+    # This is the IP address of the router in the VPC network.
+    # It must be in the same range as
+
+  }
+}
+```
+
+<br>
+
+This Terraform block creates a **Google Cloud Router** named `"router"` in the `us-central1` region, connected to the specified VPC network name that you created in vpc.tf.
+
+<br>
+
+<h2>11 Create NAT: (Cloud Engineers:
+<a href="https://github.com/lynellg">Jody</a> , <a href="https://github.com/Futurist2099">Futurist</a> and <a href="https://github.com/Dejii2">DJ</a>)</h2>
+
+In VS code a file named [5-nat.tf](https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/blob/main/5-nat.tf) is created. 
+
+
+
+```hcl
+resource "google_compute_router_nat" "nat" {
+  name   = "nat"
+  router = google_compute_router.router.name
+  region = "us-central1"
+
+  source_subnetwork_ip_ranges_to_nat = "LIST_OF_SUBNETWORKS"
+  nat_ip_allocate_option             = "MANUAL_ONLY"
+
+  subnetwork {
+    name                    = google_compute_subnetwork.private.id
+    source_ip_ranges_to_nat = ["ALL_IP_RANGES"]
+  }
+
+  nat_ips = [google_compute_address.nat.self_link]
+}
+
+# https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_address
+resource "google_compute_address" "nat" {
+  name         = "nat"
+  address_type = "EXTERNAL"
+  network_tier = "PREMIUM"
+
+}
+```
+
+
+This Terraform configuration sets up **Cloud NAT** for a your private subnetwork. It creates a NAT gateway named `"nat"` linked to a Cloud Router, allowing instances in the private subnetwork to access the internet without needing external IPs. It manually assigns a static external IP (`google_compute_address.nat`) and applies NAT to **all IP ranges** within the specified subnetwork. The NAT IP allocation is set to **manual**, and only listed subnetworks are included.
+
+<br>
+
+<div align="center">
+  <img src="Images/futurist_git_status_router_nat.png" alt="image1" width="800"/>
+</div>
+
+<br>
+
+<div align="center">
+  <img src="Images/futurist_git_commit_router_nat.png" alt="image1" width="800"/>
+</div>
+
+
+<br>
+
+<div align="center">
+  <img src="Images/futurist_git_push_router_nat.png" alt="image1" width="800"/>
+</div>
+
 
 <h2></h2>
 
