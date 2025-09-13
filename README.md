@@ -105,6 +105,9 @@ To create buckets you can either create on on the fly or use an existing bucket 
 
 <h2>2 Create a Terraform Service Account:</h2>
 
+<h3>Instructions</h3>
+
+  1. Create a new service acount in GCP & add the desied roles to the new service account
 
 <br>
 
