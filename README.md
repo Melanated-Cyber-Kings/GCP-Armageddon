@@ -46,12 +46,19 @@ Cleveland
 <a href="https://github.com/lynellg">**Jody**</a> , <a href="https://github.com/Futurist2099">**Futurist**</a> and <a href="https://github.com/Dejii2">**DJ**)</a></a>
       - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/tree/main?tab=readme-ov-file#step-2">9 Setup Remote Backend: (**Cloud Engineers:**
 <a href="https://github.com/lynellg">**Jody**</a> , <a href="https://github.com/Futurist2099">**Futurist**</a> and <a href="https://github.com/Dejii2">**DJ**)</a></a>
-      - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/tree/main?tab=readme-ov-file#step-2">10 Create VPC: (**Cloud Engineers:**
+      - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/tree/main?tab=readme-ov-file#step-2">10 Create Router: (**Cloud Engineers:**
 <a href="https://github.com/lynellg">**Jody**</a> , <a href="https://github.com/Futurist2099">**Futurist**</a> and <a href="https://github.com/Dejii2">**DJ**)</a></a>
-      - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/tree/main?tab=readme-ov-file#step-2">11 Terraform Workflow: (**Dev Tooling:**
+      - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/tree/main?tab=readme-ov-file#step-2">11 Create NAT: (**Cloud Engineers:**
+<a href="https://github.com/lynellg">**Jody**</a> , <a href="https://github.com/Futurist2099">**Futurist**</a> and <a href="https://github.com/Dejii2">**DJ**)</a></a>
+      - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/tree/main?tab=readme-ov-file#step-2">12 Create VPC: (**Cloud Engineers:**
+<a href="https://github.com/lynellg">**Jody**</a> , <a href="https://github.com/Futurist2099">**Futurist**</a> and <a href="https://github.com/Dejii2">**DJ**)</a></a>
+      - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/tree/main?tab=readme-ov-file#step-2">13 Pull request and approval: 
+      - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/tree/main?tab=readme-ov-file#step-2">14 Terraform Workflow: (**Dev Tooling:**
 <a href="https://github.com/KTMachine">**Invictus**</a> and <a href="https://github.com/Brimah-Khalil-Kamara">**Brimah**)</a></a>
-      - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/tree/main?tab=readme-ov-file#step-2">12 SNYK Configuration: (**DevSecOps:**
+      - <a href="https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/tree/main?tab=readme-ov-file#step-2">15 SNYK Configuration: (**DevSecOps:**
 <a href="https://github.com/LarvariousM">**Lavarious**</a> and <a href="https://github.com/cloudninja365">**Rod**)</a></a>
+
+
 
 
       
@@ -578,12 +585,12 @@ jobs:
 
 <h2></h2>
 
-<h2>12 SNYK Configuration: (DevSecOps:
+<h2>15 SNYK Configuration: (DevSecOps:
 <a href="https://github.com/LarvariousM">Lavarious</a> and <a href="https://github.com/cloudninja365">Rod</a>)</h2>
 
 <br>
 
-This GitHub Actions workflow runs a **Snyk Infrastructure as Code (IaC) security scan** on every `push`. It checks out the repository, then uses the `snyk/actions/iac` GitHub Action to scan your **GCP Terraform or IaC configuration** for security issues. It uses a Snyk token stored in GitHub Secrets and only reports issues with **medium severity or higher**. To get this token you must create a snyk account 
+This GitHub Actions workflow runs a **Snyk Infrastructure as Code (IaC) security scan** on every `push`. It checks out the repository, then uses the `snyk/actions/iac` GitHub Action to scan your **GCP Terraform or IaC configuration** for security issues. It uses a Snyk token stored in GitHub Secrets and only reports issues with **medium severity or higher**. To get this token you must create a snyk account. Then navigate to the token as shown below to retrieve it.
 
 <br>
 
@@ -602,6 +609,7 @@ jobs:
       with:
         args: --severity-threshold=medium
 ```
+
 <br>
 
 <div align="center">
