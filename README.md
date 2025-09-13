@@ -476,7 +476,7 @@ This Terraform configuration sets up **Cloud NAT** for a your private subnetwork
 
 <h2></h2>
 
-<h2>10 Create VPC: (Cloud Engineers:
+<h2>12 Create VPC: (Cloud Engineers:
 <a href="https://github.com/lynellg">Jody</a> , <a href="https://github.com/Futurist2099">Futurist</a> and <a href="https://github.com/Dejii2">DJ</a>)</h2>
 
 The VPC will allow you to define your network infrastucture.
@@ -492,7 +492,7 @@ resource "google_compute_network" "vpc_network" {
 
 <br>
 
-<h2>11 Pull request and approval</h2>
+<h2>13 Pull request and approval</h2>
 
 <br>
 
@@ -517,10 +517,10 @@ Once your local git files have been pushed into github you should now create a p
 
 <h2></h2>
 
-<h2>11 Terraform Workflow: (Dev Tooling:
+<h2>14 Terraform Workflow: (Dev Tooling:
 <a href="https://github.com/KTMachine">Invictus</a> and <a href="https://github.com/Brimah-Khalil-Kamara">Brimah</a>)</h2>
 
-Once our basic infrastructure has been configured, we can begin to execute terraform workflow yaml file. When you push from your local git branch this should kick off github action to run your terraform.yaml file. This will run the terraform in gcp using the service acount credentials. you want a script that Runs on pull requests to the main branch, authenticates with Google Cloud, sets up Terraform. runs terraform init, fmt, validate, and plan. This is a solid starting point for your simple snyk scan needs. Theres no need to run a terraform apply as you're not deploying resources.
+Once your basic infrastructure has been configured, you can begin to execute terraform workflow yaml file. When you push from your local git branch this should kick off github actions to run your terraform.yaml file. This will run the terraform in gcp using the service acount credentials. You want a script that Runs on pull requests to the main branch, authenticates with Google Cloud, sets up Terraform. runs terraform init, fmt, validate, and plan. This is a solid starting point for your simple snyk scan needs. Theres no need to run a terraform apply as you're not deploying resources.
 
 <br>
 
@@ -580,5 +580,36 @@ jobs:
 
 <h2>12 SNYK Configuration: (DevSecOps:
 <a href="https://github.com/LarvariousM">Lavarious</a> and <a href="https://github.com/cloudninja365">Rod</a>)</h2>
+
+<br>
+
+This GitHub Actions workflow runs a **Snyk Infrastructure as Code (IaC) security scan** on every `push`. It checks out the repository, then uses the `snyk/actions/iac` GitHub Action to scan your **GCP Terraform or IaC configuration** for security issues. It uses a Snyk token stored in GitHub Secrets and only reports issues with **medium severity or higher**. To get this token you must create a snyk account 
+
+<br>
+
+```hcl
+name: Push snyk scan results to GitHub
+on: push
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run Snyk to check GCP infrastructure as code
+      uses: snyk/actions/iac@master
+      env:
+        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+      with:
+        args: --severity-threshold=medium
+```
+<br>
+
+<div align="center">
+  <img src="Images/snyktoken4.png" alt="image1" width="800"/>
+</div>
+
+
+
+
 
 
