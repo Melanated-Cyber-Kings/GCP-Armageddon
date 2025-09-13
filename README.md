@@ -103,15 +103,57 @@ To create buckets you can either create on on the fly or use an existing bucket 
 
 <br>
 
+<div align="center">
+  <img src="Images/create_bucket.png" alt="image1" width="800"/>
+</div>
+
+<br>
+
+<div align="center">
+  <img src="Images/created_bucket.png" alt="image1" width="800"/>
+</div>
+
+<br>
+
 <h2>2 Create a Terraform Service Account:</h2>
 
 <h3>Instructions</h3>
 
-  1. Create a new service acount in GCP & add the desied roles to the new service account
+1. Create a new service acount in GCP & add the desied roles to the new service account
+
+<br>
+   
+<div align="center">
+  <img src="Images/service_account.png" alt="image1" width="800"/>
+</div>
+
+<br>
+
+<div align="center">
+  <img src="Images/service_account_roles.png" alt="image1" width="800"/>
+</div>
+
+<br>
+
+<div align="center">
+  <img src="Images/service_account_created.png" alt="image1" width="800"/>
+</div>
+
+<h2></h2>
 
 <br>
 
 <h2>3 GCP Create Key:</h2>
+
+2. Open the service account you just made and create a new key. Open the JSON, copy the private key.
+
+<br>
+
+<div align="center">
+  <img src="Images/service_account_key.png" alt="image1" width="800"/>
+</div>
+
+
 
 <br>
 
