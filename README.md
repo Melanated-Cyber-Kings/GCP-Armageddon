@@ -370,6 +370,12 @@ prefix = "terraform/state"
 }
 }
 ```
+<br>
+
+<div align="center">
+  <img src="Images/futurist_git_status_backend.png" alt="image1" width="800"/>
+</div>
+
 <h2></h2>
 
 In addition added is the credentials.
