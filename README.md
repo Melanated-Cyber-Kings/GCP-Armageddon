@@ -489,12 +489,40 @@ resource "google_compute_network" "vpc_network" {
     auto_create_subnetworks = true
 }
 ```
+
+<br>
+
+<h2>11 Pull request and approval</h2>
+
+<br>
+
+Once your local git files have been pushed into github you should now create a pull request before your branch can be merged to the main branch, as you previously set the permissions to do so. The approval needs at least one approval review with write accesss before it can be merged to main. 
+
+<br>
+
+<div align="center">
+  <img src="Images/jody_my_first_pull_request.png" alt="image1" width="800"/>
+</div>
+
+<br>
+
+<div align="center">
+  <img src="Images/jody_request_approval.png" alt="image1" width="800"/>
+</div>
+
+
+<br>
+
+
+
 <h2></h2>
 
 <h2>11 Terraform Workflow: (Dev Tooling:
 <a href="https://github.com/KTMachine">Invictus</a> and <a href="https://github.com/Brimah-Khalil-Kamara">Brimah</a>)</h2>
 
-Once our basic infrastructure has been configured, we can begin to execute terraform commands in our terminal
+Once our basic infrastructure has been configured, we can begin to execute terraform workflow yaml file. When you push from your local git branch this should kick off github action to run your terraform.yaml file. This will run the terraform in gcp using the service acount credentials.
+
+
 
 <h2>
 
