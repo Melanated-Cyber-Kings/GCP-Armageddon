@@ -360,7 +360,7 @@ provider "google" {
 
 In VS code a file named [1-backend.tf](https://github.com/Melanated-Cyber-Kings/GCP-Armageddon/blob/main/01-backend.tf) is created.
 
-The following configuration is added to the 1-backend.tf file. Where gcs denotes google cloud storage, bucket is the name of the previous bucket created. 
+The following configuration is added to the 1-backend.tf file. Where gcs denotes google cloud storage, bucket is the name of the previous bucket created. Make sure to add your bucket name here. Once your branch has been created you can now use git status, git add, git commit, and git push to have files from your local git pushed into github repo that you created.  
 
 ```hcl
 terraform {
@@ -373,7 +373,19 @@ prefix = "terraform/state"
 <br>
 
 <div align="center">
-  <img src="Images/futurist_git_status_backend.png" alt="image1" width="800"/>
+  <img src="Images/futurist._git_status._backend.png" alt="image1" width="800"/>
+</div>
+
+<br>
+
+<div align="center">
+  <img src="Images/futurist_git_commit_backend.png" alt="image1" width="800"/>
+</div>
+
+<br>
+
+<div align="center">
+  <img src="Images/futurist_git_push.png" alt="image1" width="800"/>
 </div>
 
 <h2></h2>
