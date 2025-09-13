@@ -520,15 +520,63 @@ Once your local git files have been pushed into github you should now create a p
 <h2>11 Terraform Workflow: (Dev Tooling:
 <a href="https://github.com/KTMachine">Invictus</a> and <a href="https://github.com/Brimah-Khalil-Kamara">Brimah</a>)</h2>
 
-Once our basic infrastructure has been configured, we can begin to execute terraform workflow yaml file. When you push from your local git branch this should kick off github action to run your terraform.yaml file. This will run the terraform in gcp using the service acount credentials.
+Once our basic infrastructure has been configured, we can begin to execute terraform workflow yaml file. When you push from your local git branch this should kick off github action to run your terraform.yaml file. This will run the terraform in gcp using the service acount credentials. you want a script that Runs on pull requests to the main branch, authenticates with Google Cloud, sets up Terraform. runs terraform init, fmt, validate, and plan. This is a solid starting point for your simple snyk scan needs. Theres no need to run a terraform apply as you're not deploying resources.
+
+<br>
+
+```hcl
+
+name: 'Terraform'
+
+on:
+  pull_request:
+    branches:
+    - main
 
 
+jobs:
+  terraform:
+    name: 'Terraform'
+    runs-on: ubuntu-latest
+   
 
-<h2>
+    # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+    # Checkout the repository to the GitHub Actions runner
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: auth to GCP
+      uses: google-github-actions/auth@v0
+      with:
+        credentials_json: ${{ secrets.GOOGLE_CREDENTIALS }}
+#This is Invictus' code
+
+    - name: Setup Terraform
+      uses: hashicorp/setup-terraform@v2
+
+    # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
+    - name: Terraform Init
+      run: terraform init
+
+    # Checks that all Terraform configuration files adhere to a canonical format
+    - name: Terraform Format
+      run: terraform fmt -check
+
+    # Validates the configuration files in a directory, ensuring that they are syntactically valid and internally consistent
+    - name: Terraform Validate
+      run: terraform validate
+
+    # Generates an execution plan for Terraform
+    - name: Terraform Plan
+      run: terraform plan -input=false
+```
 
 
- 
-</h2>
+<h2></h2>
 
 <h2>12 SNYK Configuration: (DevSecOps:
 <a href="https://github.com/LarvariousM">Lavarious</a> and <a href="https://github.com/cloudninja365">Rod</a>)</h2>
